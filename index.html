@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+<title>Teen Maailma</title>
+</head>
+
+<body>
+<header>
+  <h1>Tee - makuja ja perinteitä</h1>
+</header>
+
+<nav>
+<a href="index.html">Etusivu</a> 
+<a href="valmistus.html">Teen valmistus</a>
+</nav>
+
+<main>
+<section>
+  <p>Tervetuloa tutustumaan teen kiehtovaan maailmaan!
+  Tee on yksi maailman suosituimmista juomista ja sitä nautitaan lukemattomissa eri muodoissa ympäri maailmaa. Tällä sivustolla opit teen historiasta, eri teelaaduista ja teen valmistuksesta.</p>
+<img src="tee1.jpg" alt="Lähikuva teekupista, johon kaadetaan teetä. Taustalla teelehtiä.">
+</section>
+
+<section class="button-container">
+  <button onclick="naytaTeeFakta()">
+    Näytä teefakta
+  </button>
+
+  <button onclick="naytaSatunnainenFakta()">
+    Näytä satunnainen teefakta
+  </button>
+
+  <button onclick="laskeKuppeja()">
+    Kuinka monta kuppia saadaan viidestä teekannusta?
+  </button>
+</section>
+
+<section>
+  <h2>Teen historia</h2>
+  <p>Teen historia ulottuu tuhansien vuosien taakse. Teen uskotaan saaneen alkunsa Kiinassa, kun teepuun lehtiä päätyi vahingossa kuumaan veteen. Vähitellen teen juomisesta tuli tärkeä osa kiinalaista kulttuuria ja perinnettä.<br>
+    Kiinasta tee levisi ensin muualle Aasiaan, kuten Japaniin. Eurooppaan tee saapui 1600-luvulla kauppareittien kautta ja siitä tuli nopeasti suosittu juoma Englannissa.
+    Nykyään tee on yksi maailman juoduimmista juomista. Sitä nautitaan ja valmistetaan lukuisilla eri tavoilla eri kulttuureissa.</p>
+    
+<h3>Lue lisää teen historiasta</h3>
+
+<a href="https://www.tea.co.uk/history-of-tea"
+   target="_blank">
+   History of Tea | UK Tea & Infusions Association
+</a>
+</section>
+
+<section>
+<div class="card cat-card">
+
+    <h2>Teehetken kissakuva</h2>
+
+    <p>Hae satunnainen kissakuva teehetkesi iloksi.</p>
+
+    <label for="kuvaMaara">
+        Valitse kuvien määrä:
+    </label>
+
+    <select id="kuvaMaara">
+        <option value="1">1 kuva</option>
+        <option value="3">3 kuvaa</option>
+        <option value="5">5 kuvaa</option>
+    </select>
+
+    <br><br>
+
+    <button id="haeKissat">
+        Hae kuvat
+    </button>
+
+    <p id="kissaTeksti">
+        Kuvat näytetään alla.</p>
+
+    <div id="kissaGalleria"></div>
+
+</div>
+</section>
+
+<section>
+  <h2>Suosituimmat teelaadut</h2>
+  <ul>
+    <li>Musta tee - voimakas ja täyteläinen maku</li>
+    <li>Vihreä tee - raikas ja kevyt vaihtoehto</li>
+    <li>Valkoinen tee - mieto ja hienostunut maku</li>
+    <li>Yrttitee - yrttinen, kukkainen tai hedelmäinen</li>
+  </ul>
+</section>
+
+<section>
+    <div class="card weather-card">
+        <h2>Teehetken sää</h2>
+
+        <p>Hae tämänhetkinen sää Vaasasta ja saat samalla teesuosituksen.</p>
+
+        <button id="haeSaa">
+            Hae sää
+        </button>
+
+        <p id="saaTeksti">
+            Säätiedot näkyvät tässä.</p>
+
+        <p id="teeSuositus"></p>
+    </div>
+</section>
+
+<section>
+  <div class="card">
+  <h2>Tiesitkö?</h2>
+  <p>Kaikki musta, vihreä, valkoinen ja oolong-tee tulevat samasta teekasvista. Erot tulevat lehtien käsittely- ja valmistustavoista.</p>
+  </div>
+</section>
+
+<section>
+<h2>Eri teelajien vertailu</h2>
+<table border="1">
+  <tr>
+    <th>Teelaji</th>
+    <th>Maku</th>
+    <th>Haudutuslämpötila</th>
+  </tr>
+  <tr>
+    <td>Musta tee</td>
+    <td>Voimakas</td>
+    <td>100 °C</td>
+  </tr>
+  <tr>
+    <td>Vihreä tee</td>
+    <td>Raikas</td>
+    <td>70-80 °C</td>
+  </tr>
+  <tr>
+    <td>Valkoinen tee</td>
+    <td>Mieto</td>
+    <td>75-85 °C</td>
+  </tr>
+  <tr>
+    <td>Yrttitee</td>
+    <td>Vaihtelee yrttien mukaan</td>
+    <td>95-100 °C</td>
+  </tr>
+</table>
+</section>
+
+<section>
+  <h3>Haudutuslämpötilan merkitys</h3>
+  <p>Eri teelaadut vaativat erilaisen haudutuslämpötilan. Esimerkiksi vihreä tee valmistetaan yleensä noin 70-80 °C vedessä, kun taas musta tee kestää kiehuvaa vettä.</p>
+</section>
+
+<section class="flex-container">
+  <div class="flex-box">
+    <h3>Tee Japanissa</h3>
+    <p>Japanissa vihreä tee on erittäin suosittua. Perinteinen japanilainen teeseremonia korostaa rauhallisuutta, kunnioitusta ja teen valmistuksen taitoa.</p>
+  </div>
+
+  <div class="flex-box">
+    <h3>Tee Englannissa</h3>
+    <p>Englannissa iltapäivätee eli afternoon tea on tunnettu perinne. Teen kanssa nautitaan usein pieniä voileipiä, leivonnaisia ja keksejä.</p>
+  </div>
+</section>
+
+<section>
+<img src="afternoon-tea.jpg" alt="Perinteinen englantilainen iltapäivätee-asetelma. Etualalla teepannu ja teekuppeja, taustalla pieniä leivonnaisia.">
+</section>
+
+<section>
+  <h2>Teen valmistus</h2>
+  <p>
+  Haluatko oppia lisää teen valmistuksesta?
+  </p>
+
+  <a href="valmistus.html">Siirry Teen valmistus-sivulle </a>
+</section>
+</main>
+
+<br>
+<footer>
+  Johdatus sovelluskehitykseen |
+  Tekijä: Ella Haimakainen |
+  2026
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
